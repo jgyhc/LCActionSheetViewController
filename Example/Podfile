@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LCActionSheetViewController_Example' do
+  pod 'LCActionSheetViewController', :path => '../'
+
+  target 'LCActionSheetViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
