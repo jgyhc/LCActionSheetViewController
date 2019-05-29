@@ -7,6 +7,7 @@
 //
 
 #import "LCViewController.h"
+#import "LCActionSheetViewController.h"
 
 @interface LCViewController ()
 
@@ -24,6 +25,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)show:(id)sender {
+    
+    LCActionSheetViewController *viewController = [[LCActionSheetViewController alloc] initWithTitles:@[@"确定", @"asdalsk", @"阿达的快乐", @"按时打卡了敬爱空间的"] handler:^(LCActionSheet * _Nonnull actionSheet, NSString * _Nonnull title, NSInteger idex) {
+        NSLog(@"点击了%@", title);
+    }];
+    [self presentViewController:viewController animated:YES completion:nil];
+    
 }
 
 @end

@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		1D8F7147F128219D49055D0F /* Pods-LCActionSheetViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCActionSheetViewController_Example.release.xcconfig"; path = "Target Support Files/Pods-LCActionSheetViewController_Example/Pods-LCActionSheetViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		212F1D34FE930D9071895342 /* LCActionSheetViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LCActionSheetViewController.podspec; path = ../LCActionSheetViewController.podspec; sourceTree = "<group>"; };
+		212F1D34FE930D9071895342 /* LCActionSheetViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LCActionSheetViewController.podspec; path = ../LCActionSheetViewController.podspec; sourceTree = "<group>"; };
 		2AE77BC470DE0684C06954DA /* Pods_LCActionSheetViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCActionSheetViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A6DEBF4544D7B9A4615E267 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3A6DEBF4544D7B9A4615E267 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		45703F0AAB552B9A6ACE9BC2 /* Pods-LCActionSheetViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCActionSheetViewController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LCActionSheetViewController_Tests/Pods-LCActionSheetViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E596A766882747231A7D11D /* Pods_LCActionSheetViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCActionSheetViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* LCActionSheetViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCActionSheetViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +63,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84FBB435BFC240E4C01D3F0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		84FBB435BFC240E4C01D3F0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8678B9E9486ABAD8CA52EFAB /* Pods-LCActionSheetViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCActionSheetViewController_Tests.release.xcconfig"; path = "Target Support Files/Pods-LCActionSheetViewController_Tests/Pods-LCActionSheetViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9F5422F5AFC1E0C2B58638E /* Pods-LCActionSheetViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCActionSheetViewController_Example.debug.xcconfig"; path = "Target Support Files/Pods-LCActionSheetViewController_Example/Pods-LCActionSheetViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				45703F0AAB552B9A6ACE9BC2 /* Pods-LCActionSheetViewController_Tests.debug.xcconfig */,
 				8678B9E9486ABAD8CA52EFAB /* Pods-LCActionSheetViewController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jgyhc;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 75TU6G6GNQ;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -349,12 +351,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LCActionSheetViewController_Example/Pods-LCActionSheetViewController_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LCActionSheetViewController/LCActionSheetViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCActionSheetViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,6 +502,7 @@
 			baseConfigurationReference = E9F5422F5AFC1E0C2B58638E /* Pods-LCActionSheetViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75TU6G6GNQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LCActionSheetViewController/LCActionSheetViewController-Prefix.pch";
 				INFOPLIST_FILE = "LCActionSheetViewController/LCActionSheetViewController-Info.plist";
@@ -513,6 +518,7 @@
 			baseConfigurationReference = 1D8F7147F128219D49055D0F /* Pods-LCActionSheetViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75TU6G6GNQ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LCActionSheetViewController/LCActionSheetViewController-Prefix.pch";
 				INFOPLIST_FILE = "LCActionSheetViewController/LCActionSheetViewController-Info.plist";

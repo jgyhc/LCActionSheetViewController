@@ -1,0 +1,23 @@
+PODS:
+  - LCActionSheetViewController (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - LCActionSheetViewController (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  LCActionSheetViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LCActionSheetViewController: 92984681129251cd7445c52640e3e64421cdaf3e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 3ac7225af45333e23f281144f4a39d955f76eaad
+
+COCOAPODS: 1.6.0
