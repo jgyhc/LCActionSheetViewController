@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LCActionSheetViewController : UIViewController
 
-- (instancetype)initWithTitles:(NSArray <NSString *>*)titles handler:(void (^) (LCActionSheet *actionSheet, NSString *title, NSInteger idex))handler;
++ (instancetype)initWithTitles:(NSArray <NSString *>*)titles handler:(void (^) (LCActionSheet *actionSheet, NSString *title, NSInteger idex))handler;
 
 - (instancetype)initWithActionSheets:(NSArray <LCActionSheet *>*)actions handler:(void (^) (LCActionSheet *actionSheet, NSString *title, NSInteger idex))handler;
 

@@ -25,7 +25,7 @@
 
 @implementation LCActionSheetViewController
 
-- (instancetype)initWithTitles:(NSArray <NSString *>*)titles handler:(void (^) (LCActionSheet *actionSheet, NSString *title, NSInteger idex))handler {
++ (instancetype)initWithTitles:(NSArray <NSString *>*)titles handler:(void (^) (LCActionSheet *actionSheet, NSString *title, NSInteger idex))handler {
     NSMutableArray *objs = [NSMutableArray array];
     [titles enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         LCActionSheet *actionSheet = [[LCActionSheet alloc] init];

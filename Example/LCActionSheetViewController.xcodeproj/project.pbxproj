@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1D8F7147F128219D49055D0F /* Pods-LCActionSheetViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCActionSheetViewController_Example.release.xcconfig"; path = "Target Support Files/Pods-LCActionSheetViewController_Example/Pods-LCActionSheetViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		212F1D34FE930D9071895342 /* LCActionSheetViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LCActionSheetViewController.podspec; path = ../LCActionSheetViewController.podspec; sourceTree = "<group>"; };
+		212F1D34FE930D9071895342 /* LCActionSheetViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LCActionSheetViewController.podspec; path = ../LCActionSheetViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2AE77BC470DE0684C06954DA /* Pods_LCActionSheetViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCActionSheetViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6DEBF4544D7B9A4615E267 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		45703F0AAB552B9A6ACE9BC2 /* Pods-LCActionSheetViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCActionSheetViewController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LCActionSheetViewController_Tests/Pods-LCActionSheetViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -260,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
